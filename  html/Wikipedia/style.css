@@ -1,0 +1,243 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+ }
+ p:hover{
+	background-color: #3992a8;
+ }
+p {
+	color: #4e6065!important;
+}
+
+.header h1 {
+	color: #3992a8;
+	line-height: 100px;
+	font-size: 80px;
+	margin-top: 0;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 850px) {
+	.header h1 {
+		 font-size: 120px;
+	}
+}
+
+.header p {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.btn {
+	color: #3992a8;
+	background: #a53c3c;
+	padding: 10px 40px;
+	text-decoration: none;
+	transition: background .5s;
+}
+
+.nav {
+	background: #ffffff;
+	height: 80px;
+	width: 100%;
+}
+
+
+body, h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	color: #0d3e4a;
+}
+
+
+header {
+	background-color: #a07814;
+	color: #3992a8;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header h1 {
+	font-size: 36px;
+}
+
+div ul {
+	list-style: none;
+	text-align: center;
+	background-color: #3992a8;
+	padding: 10px 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #19b3c4;
+	font-weight: bold;
+}
+
+
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+article h2 {
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+
+article img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table, th, td {
+	border: 3px solid #a07814;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	background-color: #3992a8;
+	color: #fff;
+}
+
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #a07814;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.nav ul li {
+	color: #3992a8#fff;
+	display: inline-block; 
+	height: 80px;
+	line-height: 80px; 
+	list-style : none;
+	padding: 0 10px;
+	transition: background .5s; 
+ }
+  
+ .btn:hover, .nav ul li:hover {
+	background:#a07814 ;
+	cursor: pointer; 
+	transition: background .5s;  
+ }	
+ .element {
+	background-image: url('image.jpg');
+}
+.overlay {
+	opacity: 0.5;
+
+p {
+	color: red;
+ }
+ 
+ p {
+	color: red;
+	font-size: 20px;
+ }
+ 
+ 
+ .brand {
+ }
+ 
+ #large-title {
+ }
+ 
+ 
+ [href] {
+	color: magenta;
+ }
+ 
+ 
+ p:hover {
+	background-color: lime;
+ }
+ 
+ 
+ h1.special {
+ }
+ 
+ 
+ .main-list li {
+ }
+ 
+ 
+ .bold {
+	font-weight: bold;
+ }
+ 
+ 
+ h1, .menu {
+	font-family: Georgia;
+ }
+ 
+ 
+ h1 {
+	font-family: Garamond;
+ }
+ 
+ 
+ p {
+	font-size: 18px;
+ }
+ 
+ 
+ p {
+	font-weight: bold;
+ }
+ 
+ 
+ h1 {
+	color: red;
+	background-color: blue;
+ }
+ 
+ 
+ .overlay {
+	opacity: 0.5;
+ }
+ 
+ 
+ element {
+	background-image: url('path/to/your/image.jpg');
+ }
+ 
+ 
+ p {
+	color: blue !important;
+ }
+	 

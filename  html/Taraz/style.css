@@ -1,108 +1,112 @@
+/* Add your CSS rules here */
 
-body, h1, h2, p, ul {
+/* Style the h1 elements with class 'green' and 'bold' */
+h1.green.bold {
+	color: green;
+	font-weight: bold;
+}
+
+/* Style the h1 element with id 'large-title' */
+h1#large-title {
+	font-size: 36px; /* You can adjust the font size as needed */
+}
+
+/* Style the h1 element with class 'headline' */
+h1.headline {
+	font-size: 24px; /* You can adjust the font size as needed */
+}
+
+/* Style the ul element with class 'main-list' and its li children */
+ul.main-list, ul.main-list li {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-
-body {
-	background-color: #f2f2f2;
-	font-family: Arial, sans-serif;
+ul.main-list li {
+	margin-bottom: 10px; /* Adjust the margin as needed */
 }
 
+/* Add background image to the header */
+.header {
+	background-image: url('path-to-your-image.jpg');
+	background-size: cover; /* Adjust as needed */
+	color: white; /* Set text color for better readability */
+}
 
-header {
-	background-color: #0066cc;
-	color: #fff;
+/* Style the navigation links */
+.navbar__list {
 	text-align: center;
-	padding: 20px 0;
 }
 
-header h1 {
-	font-size: 36px;
-}
-
-header p {
-	font-size: 18px;
-}
-
-
-nav {
-	background-color: #333;
-}
-
-nav ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-nav li {
+.navbar__item {
 	display: inline;
 	margin-right: 20px;
 }
 
-nav a {
-	color: #fff;
+.navbar__item a {
 	text-decoration: none;
+	color: #35495e;
 	font-weight: bold;
-}
-
-
-article {
-	background-color: #fff;
-	padding: 20px;
-	margin: 20px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-article h2 {
-	font-size: 24px;
-	color: #0066cc;
-}
-
-article p {
 	font-size: 16px;
-	line-height: 1.5;
 }
 
-
-aside {
-	background-color: #fff;
-	padding: 20px;
-	margin: 20px;
+/* Style the main content container */
+.main {
+	background-color: #ffffff;
 	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	padding: 20px;
 }
 
-aside h2 {
+/* Add styles for sections, text, and images within the main content */
+.section__title {
+	color: #35495e;
 	font-size: 24px;
-	color: #0066cc;
 }
 
-aside ul {
-	list-style-type: none;
-	padding: 0;
+.section__text {
+	line-height: 1.6;
+	margin-bottom: 20px;
 }
 
-aside li {
+.img {
+	max-width: 100%;
+	height: auto;
 	margin-bottom: 10px;
 }
 
-aside a {
-	color: #0066cc;
-	text-decoration: none;
+/* Style the aside resources section */
+.aside {
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-top: 20px;
 }
 
+.resource-list {
+	list-style-type: none;
+}
 
-footer {
-	background-color: #333;
-	color: #fff;
+.resource-item {
+	margin-bottom: 10px;
+}
+
+.resource-item a {
+	text-decoration: none;
+	color: #35495e;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Style the footer */
+.footer {
+	background-color: #35495e;
+	color: white;
 	text-align: center;
 	padding: 10px 0;
 }
 
-
-a:hover {
-	color: #ff6600;
-}
+/* Add additional CSS rules as needed */

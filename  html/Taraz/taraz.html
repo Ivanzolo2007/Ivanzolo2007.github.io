@@ -1,4 +1,3 @@
-	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,146 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Taraz</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #35495e;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #35495e;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        article {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #35495e;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        video {
-            max-width: 100%;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        aside {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #35495e;
-            color: #ffffff;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Discover Taraz</h1>
-        <p>Unveiling the Rich Heritage of Taraz</p>
+	<h1 class='green bold'> </h1>
+	<h1 id='large-title'> Beksultan</h1>
+	<h1 class='headline'>Taraz</h1>
+	<ul class='main-list'>
+		<li> Discover Taraz </li>
+		<li>Discover Taraz </li>
+		<li>  Discover Taraz</li>
+	  </ul>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Discover Taraz</h1>
+            <p class="header__subtitle">Unveiling the Rich Heritage of Taraz</p>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#history">History</a></li>
-            <li><a href="#attractions">Attractions</a></li>
-            <li><a href="#cuisine">Cuisine</a></li>
-            <li><a href="#resources">Resources</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#history">History</a></li>
+                <li class="navbar__item"><a href="#attractions">Attractions</a></li>
+                <li class="navbar__item"><a href="#cuisine">Cuisine</a></li>
+                <li class="navbar__item"><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <article>
-            <section id="history">
-                <h2>History of Taraz</h2>
-                <p>Taraz is an ancient city with a vibrant history that traces its roots back to the Silk Road era, fostering trade and cultural exchange.</p>
-            </section>
+    <main class="main">
+        <div class="container">
+            <article class="article">
+                <section id="history">
+                    <h2 class="section__title">History of Taraz</h2>
+                    <p class="section__text">Taraz is an ancient city with a vibrant history that traces its roots back to the Silk Road era, fostering trade and cultural exchange.</p>
+                </section>
 
-            <section id="attractions">
-                <h2>Must-Visit Attractions</h2>
-                <p>Explore Taraz's remarkable landmarks, including the majestic Taraz Castle, the historic Aisha Bibi Mausoleum, and the lively Taraz Zoo.</p>
-            </section>
+                <section id="attractions">
+                    <h2 class="section__title">Must-Visit Attractions</h2>
+                    <p class="section__text">Explore Taraz's remarkable landmarks, including the majestic Taraz Castle, the historic Aisha Bibi Mausoleum, and the lively Taraz Zoo.</p>
+                </section>
 
-            <section id="cuisine">
-                <h2>Taraz Cuisine</h2>
-                <p>Indulge in the exquisite Central Asian flavors of Taraz with traditional dishes such as plov, beshbarmak, and manty.</p>
-            </section>
+                <section id="cuisine">
+						<h1 class='green bold'>Taraz Cuisine </h1>
+                    <p class="section__text">Indulge in the exquisite Central Asian flavors of Taraz with traditional dishes such as plov, beshbarmak, and manty.</p>
+                </section>
 
-            <section id="video">
-                <h2>Video Tour</h2>
-                <video controls>
-                    <source src="<iframe width="1128" height="634" src="https://www.youtube.com/embed/ALQOlrhKaKs" title="Древний город Тараз – сокровищница культурного наследия Казахстана | Большая страна" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </section>
+                <section id="video">
+                    <h2 class="section__title">Video Tour</h2>
+                    <div class="video-container">
+                        <iframe width="1128" height="634" src="https://www.youtube.com/embed/ALQOlrhKaKs" title="Древний город Тараз – сокровищница культурного наследия Казахстана | Большая страна" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
 
-            <section id="images">
-                <h2>Image Gallery</h2>
-                <img src="https://www.kt.kz/neofiles/serve-image/623d9ca3d6a86c30614460d0" alt="Image 1">
-                
-            </section>
-        </article>
+                <section id="images">
+                    <h2 class="section__title">Image Gallery</h2>
+                    <img src="https://www.kt.kz/neofiles/serve-image/623d9ca3d6a86c30614460d0" alt="Image 1">
+                    
+                </section>
+            </article>
 
-        <aside>
-            <h2>Resources</h2>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Taraz">Taraz on Wikipedia</a></li>
-                <li><a href="https://www.lonelyplanet.com/kazakhstan/southern-kazakhstan/taraz">Lonely Planet Guide to Taraz</a></li>
-                <li><a href="https://www.tripadvisor.com/Tourism-g1720392-Taraz_Taraz_Region-Vacations.html">TripAdvisor Taraz</a></li>
-            </ul>
-        </aside>
+            <aside class="aside">
+                <h2 class="section__title">Resources</h2>
+                <ul class="resource-list">
+                    <li class="resource-item"><a href="https://en.wikipedia.org/wiki/Taraz">Taraz on Wikipedia</a></li>
+                    <li class="resource-item"><a href="https://www.lonelyplanet.com/kazakhstan/southern-kazakhstan/taraz">Lonely Planet Guide to Taraz</a></li>
+                    <li class="resource-item"><a href="https://www.tripadvisor.com/Tourism-g1720392-Taraz_Taraz_Region-Vacations.html">TripAdvisor Taraz</a></li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Akboltai Beksultan. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2023 Akboltai Beksultan. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
