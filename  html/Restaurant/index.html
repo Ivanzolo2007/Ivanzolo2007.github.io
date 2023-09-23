@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+<body>
+
+    <section> 
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../Restaurant/images/logo.png" class="logo"></a>
+				
+            <ul>
+					<li style="--clr: #00ade1;">
+						 <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
+					</li>
+					<li style="--clr: #ff6493;">
+						 <a href="#" data-text="&nbsp;About">&nbsp;About</a>
+					</li>
+					<li style="--clr: #ffdd1c;">
+						 <a href="#" data-text="&nbsp;Services">&nbsp;Services</a>
+					</li>
+					<li style="--clr: #00dc82;">
+						 <a href="#" data-text="&nbsp;Team">&nbsp;Team</a>
+					</li>
+					<li style="--clr: #dc00d4;">
+						 <a href="#" data-text="&nbsp;Contact">&nbsp;Contact</a>
+					</li>
+			  </ul>
+			  <script>
+					let texts = document.querySelectorAll('ul li a');
+					texts.forEach((text) => {
+						 text.innerHTML = text.innerText.split('').map((letters, i) => `<span>${letters}</span>`).join('');
+						 let duration = Math.random() * 5;
+						 text.style.animationDuration = `0.25s + ${duration}s`;
+						 text.style.animationDelay = `0.25s + ${duration}s`;
+					});
+			  </script>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>"Indulge in the rich world of Starbucks, where every sip is a journey of flavor and every moment is an opportunity to connect. From our expertly roasted coffee to our cozy cafés, Starbucks is your daily escape. Savor the exceptional and embrace the extraordinary at Starbucks today.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="../Restaurant/images/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="../Restaurant/images/thumb1.png" onclick="imgSlider('../Restaurant/images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="../Restaurant/images/thumb2.png" onclick="imgSlider('../Restaurant/images/img2.png');changeCircleColor('pink')"></li>
+            <li><img src="../Restaurant/images/thumb3.png" onclick="imgSlider('../Restaurant/images/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../Restaurant/images/facebook.png"></a></li>
+            <li><a href="#"><img src="../Restaurant/images/twitter.png"></a></li>
+            <li><a href="#"><img src="../Restaurant/images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+         function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

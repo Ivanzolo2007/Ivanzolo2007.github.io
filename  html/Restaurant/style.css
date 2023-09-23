@@ -72,9 +72,17 @@ header ul li a {
 }
 
 .content .textBox h2 span {
-    color: #017143;
-    font-size: 1.2em;
-    font-weight: 900;
+	color: #017143;
+	font-size: 1.2em;
+	font-weight: 900;
+	text-transform: uppercase;
+	filter: blur(10px);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content .textBox h2 span:hover {
+	filter: blur(0px);
 }
 
 .content .textBox p {
@@ -146,7 +154,7 @@ header ul li a {
 .sci li a {
     display: inline-block;
     margin: 5px 0;
-    transform: scale(0.6); /* Fixed the scale value */
+    transform: scale(0.6); 
     filter: invert(1);
 }
 
@@ -159,3 +167,35 @@ header ul li a {
     background: #017143;
     clip-path: circle(600px at right 800px);
 }
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a::before {
+	content: attr(data-text);
+	position: absolute;
+	color: var(--clr);
+	width: 0;
+	overflow: hidden;
+	border-right: 5px solid var(--clr);
+	transition: width 1s, filter 1s; 
+}
+
+ul li a:hover::before {
+	width: 65%;
+	filter: drop-shadow(0 0 25px var(--clr));
+}
+
+ul li a span {
+	position: relative;
+	animation: animateText linear infinite;
+}
+
+ul:hover li a span {
+	opacity: 0.30;
+	animation-play-state: paused;
+}
+
+
+
