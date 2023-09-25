@@ -23,7 +23,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ header {
 
 header .logo {
     position: relative;
-    max-width: 80px;
+    max-width: 150px;
 }
 
 header ul {
@@ -45,7 +45,7 @@ header ul li {
 
 header ul li a {
     display: inline-block;
-    color: #333;
+    color: #000000;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
@@ -65,35 +65,23 @@ header ul li a {
 }
 
 .content .textBox h2 {
-    color: #333;
+    color: #000000;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
-
 .content .textBox h2 span {
-	color: #017143;
+	color: #012671;
 	font-size: 1.2em;
 	font-weight: 900;
 	text-transform: uppercase;
-	filter: blur(10px);
-	transition: 0.5s;
-	cursor: pointer;
+	
 }
-
-.content .textBox h2 span:hover {
-	filter: blur(0px);
-}
-
-.content .textBox p {
-    color: #333;
-}
-
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #017143;
+    background: #012671;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -123,6 +111,7 @@ header ul li a {
 .thumb li {
     list-style: none;
     display: inline-block;
+	 left: 610px;
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
@@ -164,7 +153,7 @@ header ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #017143;
+    background: #012671;
     clip-path: circle(600px at right 800px);
 }
 ul li {
@@ -196,6 +185,23 @@ ul:hover li a span {
 	opacity: 0.30;
 	animation-play-state: paused;
 }
+/* Footer styling */
+footer {
+	background-color: #333; /* Background color for the footer */
+	color: #fff; /* Text color for the footer */
+	padding: 20px; /* Padding around the content inside the footer */
+	text-align: center; /* Center-align the content */
+}
 
+/* Style links in the footer */
+footer a {
+	color: #fff; /* Link text color */
+	text-decoration: none; /* Remove underlines from links */
+	margin: 0 10px; /* Add margin between links */
+}
 
+/* Style links on hover */
+footer a:hover {
+	text-decoration: underline; /* Underline links on hover */
+}
 
