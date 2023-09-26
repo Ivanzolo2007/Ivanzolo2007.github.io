@@ -154,7 +154,7 @@ header ul li a {
     width: 100%;
     height: 100%;
     background: #012671;
-    clip-path: circle(600px at right 800px);
+    clip-path: circle(600px at right 400px);
 }
 ul li {
     position: relative;
@@ -185,23 +185,23 @@ ul:hover li a span {
 	opacity: 0.30;
 	animation-play-state: paused;
 }
-/* Footer styling */
+
 footer {
-	background-color: #333; /* Background color for the footer */
-	color: #fff; /* Text color for the footer */
-	padding: 20px; /* Padding around the content inside the footer */
-	text-align: center; /* Center-align the content */
+	background-color: #333;
+	color: #fff; 
+	padding: 20px; 
+	text-align: center; 
 }
 
-/* Style links in the footer */
+
 footer a {
-	color: #fff; /* Link text color */
-	text-decoration: none; /* Remove underlines from links */
-	margin: 0 10px; /* Add margin between links */
+	color: #fff; 
+	text-decoration: none; 
+	margin: 0 10px; 
 }
 
-/* Style links on hover */
+
 footer a:hover {
-	text-decoration: underline; /* Underline links on hover */
+	text-decoration: underline; 
 }
 

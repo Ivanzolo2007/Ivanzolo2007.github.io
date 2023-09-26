@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" type="text/css" href="sytle.css" />
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="nop.css" />
 </head>
 <body>
-	<header>
-		<span>G</span>
-		<span>o</span>
-		<span>d</span>
-	</header>
-	    <ul>
-        <li style="--clr: #00ade1;">
-            <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
-        </li>
-        <li style="--clr: #ff6493;">
-            <a href="#" data-text="&nbsp;About">&nbsp;About</a>
-        </li>
-        <li style="--clr: #ffdd1c;">
-            <a href="#" data-text="&nbsp;Services">&nbsp;Services</a>
-        </li>
-        <li style="--clr: #00dc82;">
-            <a href="#" data-text="&nbsp;Team">&nbsp;Team</a>
-        </li>
-        <li style="--clr: #dc00d4;">
-            <a href="#" data-text="&nbsp;Contact">&nbsp;Contact</a>
-        </li>
-    </ul>
-    <script>
-        let texts = document.querySelectorAll('ul li a');
-        texts.forEach((text) => {
-            text.innerHTML = text.innerText.split('').map((letters, i) => `<span>${letters}</span>`).join('');
-            let duration = Math.random() * 5;
-            text.style.animationDuration = `0.25s + ${duration}s`;
-            text.style.animationDelay = `0.25s + ${duration}s`;
-        });
-    </script>
+	<div class="slidershow middle">
+
+		<div class="slides">
+		  <input type="radio" name="r" id="r1" checked="">
+		  <input type="radio" name="r" id="r2">
+		  <input type="radio" name="r" id="r3">
+		  <input type="radio" name="r" id="r4">
+		  <input type="radio" name="r" id="r5">
+		  <div class="slide s1">
+			 <img src="1.jpg" alt="">
+		  </div>
+		  <div class="slide">
+			 <img src="../css/image/img-locations-background.jpg" alt="">
+		  </div>
+		  <div class="slide">
+			 <img src="../css/image/img-spiced-rum.jpg" alt="">
+		  </div>
+		  <div class="slide">
+			 <img src="../css/image/img-mission-background.jpg" alt="">
+		  </div>
+		  <div class="slide">
+			 <img src="../css/image/img-myrtle-ave.jpg" alt="">
+		  </div>
+		</div>
+	
+		<div class="navigation">
+		  <label for="r1" class="bar"></label>
+		  <label for="r2" class="bar"></label>
+		  <label for="r3" class="bar"></label>
+		  <label for="r4" class="bar"></label>
+		  <label for="r5" class="bar"></label>
+		</div>
+	 </div>
 </body>
 </html>
+<div class="slidershow middle">
+
+	
