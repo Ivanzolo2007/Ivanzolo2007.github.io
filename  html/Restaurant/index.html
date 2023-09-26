@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nop.css">
     <title>Canteen</title>
     <style>
-        
+        /* Add any additional CSS styles you need for your combined content */
     </style>
 </head>
 <body>
-    <section> 
+    <section>
         <div class="circle"></div>
         <header>
             <a href="#"><img src="../Restaurant/images/max1920x1920trifx84ba620491447eef_eduresized_jihc-logo-png-v2.png" class="logo"></a>
@@ -57,7 +58,51 @@
         </ul>
     </section>
 
-    <script type="text/javascript">
+    <div class="slidershow middle">
+		<div class="slides">
+			 <input type="radio" name="r" id="r1" checked="">
+			 <input type="radio" name="r" id="r2">
+			 <input type="radio" name="r" id="r3">
+			 <input type="radio" name="r" id="r4">
+			 <input type="radio" name="r" id="r5">
+			 <div class="slide s1">
+				  <img src="1.jpg" alt="">
+			 </div>
+			 <div class="slide">
+				  <img src="../css/image/img-locations-background.jpg" alt="">
+			 </div>
+			 <div class="slide">
+				  <img src="../css/image/img-spiced-rum.jpg" alt="">
+			 </div>
+			 <div class="slide">
+				  <img src="../css/image/img-mission-background.jpg" alt="">
+			 </div>
+			 <div class="slide">
+				  <img src="../css/image/img-myrtle-ave.jpg" alt="">
+			 </div>
+		</div>
+  
+		<div class="navigation">
+			 <label for="r1" class="bar"></label>
+			 <label for="r2" class="bar"></label>
+			 <label for="r3" class="bar"></label>
+			 <label for="r4" class="bar"></label>
+			 <label for="r5" class="bar"></label>
+		</div>
+  </div>
+  
+
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+        </div>
+    </div>
+
+    <script>
+        // Your existing JavaScript code from the first code snippet
         function imgSlider(anything) {
             document.querySelector('.starbucks').src = anything;
         }
@@ -68,9 +113,6 @@
         }
     </script>
 
-
-
-    <!-- Placeholder Footer -->
     <footer>
         <p>This is a placeholder footer.</p>
     </footer>
