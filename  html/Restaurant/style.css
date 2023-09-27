@@ -21,23 +21,96 @@ section {
 header {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100px;
     width: 100%;
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header .logo {
+    left: 20%;
     position: relative;
     max-width: 150px;
+animation: logo linear 1.4s;
 }
+
+@keyframes logo {
+    0% {
+        transform: translateX(-100%) 
+                   rotate(0deg);
+   }
+
+   
+
+        100% {
+transform: translateX(6.5%) 
+           rotate(360deg);
+
+   }
+    
+/* rotating animation */
+/* movu=ing animation */
+
+
+
+} 
+
+
+
+.main-h-text {
+    display: flex;
+    position: relative;
+    left: 140px;
+    bottom: 90px;
+    font-size: 50px;
+    color: #000000;
+   opacity: 0;
+   animation: main-h-text 2s ease-in-out forwards;
+}
+
+@keyframes main-h-text {
+    0% {
+            opacity: 0;
+            font-size: 20px;
+            /* Начальная непрозрачность (невидимый) */
+        }
+    
+        100% {
+            opacity: 1;
+            font-size: 70px;
+            /* Конечная непрозрачность (полностью видимый) */
+        }
+}
+
+
+
 
 header ul {
     position: relative;
     display: flex;
+    position: relative;
+        bottom: 100px;
+    left: 100px;
+    animation: main-h-text 2s ease-in-out forwards;     
 }
+
+@keyframes nav-text-container {
+    0% {
+            opacity: 0;
+            
+            
+        }
+    
+        100% {
+            opacity: 1;
+
+   
+        }
+    }
+
 
 header ul li {
     list-style: none;
@@ -47,9 +120,10 @@ header ul li a {
     display: inline-block;
     color: #000000;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 80px;
     text-decoration: none;
 }
+
 
 .content {
     position: relative;
@@ -62,6 +136,8 @@ header ul li a {
 .content .textBox {
     position: relative;
     max-width: 600px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
 }
 
 .content .textBox h2 {
@@ -89,6 +165,7 @@ header ul li a {
 }
 
 .content .imgBox {
+    height: 500px;
     width: 600px;
     display: flex;
     justify-content: flex-end;
@@ -97,7 +174,7 @@ header ul li a {
 }
 
 .content .imgBox img {
-    max-width: 340px;
+    max-width: 500px;
 }
 
 .thumb {
