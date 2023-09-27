@@ -404,7 +404,7 @@ h4 {
 		min-height: 450px;
 		height: 100vh;
 		margin: 0;
-		background: radial-gradient(circle, #23abc3, #07c4bd, #0da488, #00000076);
+		background: radial-gradient(circle, #2350c3, #1010aaa5, #170da4f8, #2d76ff);
 	 }
 	 
 	 .stage {
@@ -432,7 +432,7 @@ h4 {
 	 
 	 .layer:after {
 		font: 150px/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
-		content: "BuBBle\a    Tea!";
+		content: "Main\a    Lovely-Product!";
 		white-space: pre;
 		text-align: center;
 		height: 100%;
@@ -529,12 +529,12 @@ h4 {
 	 }
 	 
 	 .layer:nth-child(n+11):after {
-		-webkit-text-stroke: 15px rgb(30, 255, 255);
-		text-shadow: 6px 0 6px #22edf4, 5px 5px 5px #32e8f5, 0 6px 6px #32e8f5;
+		-webkit-text-stroke: 15px rgb(6, 11, 11);
+		text-shadow: 6px 0 6px #0c0e0e, 5px 5px 5px #6632f5, 0 6px 6px #360989;
 	 }
 	 
 	 .layer:nth-child(n+12):after {
-		-webkit-text-stroke: 15px #00eade;
+		-webkit-text-stroke: 15px #0800ea;
 	 }
 	 
 	 .layer:last-child:after {
