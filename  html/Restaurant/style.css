@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: #ffffff;
+}
+
 section {
     position: relative;
     width: 100%;
@@ -35,19 +39,18 @@ header .logo {
 }
 
 header ul {
-    position: relative;
     display: flex;
+    list-style: none;
 }
 
 header ul li {
-    list-style: none;
+    margin-left: 40px;
 }
 
 header ul li a {
     display: inline-block;
     color: #000000;
     font-weight: 400;
-    margin-left: 40px;
     text-decoration: none;
 }
 
@@ -60,7 +63,6 @@ header ul li a {
 }
 
 .content .textBox {
-    position: relative;
     max-width: 600px;
 }
 
@@ -70,13 +72,14 @@ header ul li a {
     line-height: 1.4em;
     font-weight: 500;
 }
+
 .content .textBox h2 span {
-	color: #012671;
-	font-size: 1.2em;
-	font-weight: 900;
-	text-transform: uppercase;
-	
+    color: #012671;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
 }
+
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
@@ -89,7 +92,6 @@ header ul li a {
 }
 
 .content .imgBox {
-    width: 600px;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
@@ -111,7 +113,6 @@ header ul li a {
 .thumb li {
     list-style: none;
     display: inline-block;
-	 left: 610px;
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
@@ -143,7 +144,7 @@ header ul li a {
 .sci li a {
     display: inline-block;
     margin: 5px 0;
-    transform: scale(0.6); 
+    transform: scale(0.6);
     filter: invert(1);
 }
 
@@ -156,121 +157,229 @@ header ul li a {
     background: #012671;
     clip-path: circle(600px at right 400px);
 }
+
 ul li {
     position: relative;
     list-style: none;
 }
 
 ul li a::before {
-	content: attr(data-text);
-	position: absolute;
-	color: var(--clr);
-	width: 0;
-	overflow: hidden;
-	border-right: 5px solid var(--clr);
-	transition: width 1s, filter 1s; 
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    border-right: 5px solid var(--clr);
+    transition: width 1s, filter 1s;
 }
 
 ul li a:hover::before {
-	width: 65%;
-	filter: drop-shadow(0 0 25px var(--clr));
+    width: 65%;
+    filter: drop-shadow(0 0 25px var(--clr));
 }
 
 ul li a span {
-	position: relative;
-	animation: animateText linear infinite;
+    position: relative;
+    animation: animateText linear infinite;
 }
 
 ul:hover li a span {
-	opacity: 0.30;
-	animation-play-state: paused;
+    opacity: 0.30;
+    animation-play-state: paused;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-	background: #ffffff;
+    background: #ffffff;
 }
 
-.slidershow {
-	width: 100%;
-	height: 400px; /* Adjust the height as needed */
-	overflow: hidden;
-	position: relative; /* Add this to make sure the navigation is positioned correctly */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
 }
 
-.middle {
-	position: absolute;
-	top: 50%; /* Adjust the vertical position as needed */
-	left: 0;
-	right: 0; /* Center the middle div horizontally */
-	transform: translateY(-50%);
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navigation {
-	position: absolute;
-	bottom: 10px; /* Adjust the distance from the bottom as needed */
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	align-items: center; /* Vertically center the navigation */
+header .logo {
+    position: relative;
+    max-width: 150px;
 }
 
-.bar {
-	width: 60px;
-	height: 10px;
-	border: 2px solid #000000;
-	margin: 0 10px; /* Adjust the spacing between bars as needed */
-	cursor: pointer;
-	transition: 0.4s;
+header ul {
+    display: flex;
+    list-style: none;
 }
 
-.bar:hover {
-	background: #012671;
+header ul li {
+    margin-left: 40px;
 }
 
-input[name="r"] {
-	position: absolute;
-	visibility: hidden;
+header ul li a {
+    display: inline-block;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-.slides {
-	width: 500%; /* Adjust the width based on the number of slides */
-	height: 100%;
-	display: flex;
-	transition: 0.6s;
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.slide {
-	width: 20%;
-	transition: 0.6s;
+.content .textBox {
+    max-width: 600px;
 }
 
-.slide img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.content .textBox h2 {
+    color: #000000;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}	
+
+.content .textBox h2 span {
+    color: #012671;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-#r1:checked ~ .s1 {
-	margin-left: 0;
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #012671;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
-#r2:checked ~ .s1 {
-	margin-left: -20%;
+.content .imgBox {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
 }
 
-#r3:checked ~ .s1 {
-	margin-left: -40%;
+.content .imgBox img {
+    max-width: 340px;
 }
 
-#r4:checked ~ .s1 {
-	margin-left: -60%;
+.thumb {
+    position: absolute;
+    left: 90%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
 }
 
-#r5:checked ~ .s1 {
-	margin-left: -80%;
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.slide img {
-	object-fit: contain; /* This will fit the images within the slide containers while maintaining their aspect ratio */
+
+.thumb li:hover {
+    transform: translateY(-15px);
 }
+
+.thumb li img {
+    max-width: 60px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #012671;
+    clip-path: circle(600px at right 400px);
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    border-right: 5px solid var(--clr);
+    transition: width 1s, filter 1s;
+}
+
+ul li a:hover::before {
+    width: 65%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+ul li a span {
+    position: relative;
+    animation: animateText linear infinite;
+}
+
+ul:hover li a span {
+    opacity: 0.30;
+    animation-play-state: paused;
+}
+
+
+
+
+
 

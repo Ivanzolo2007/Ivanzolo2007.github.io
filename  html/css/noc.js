@@ -1,25 +1,24 @@
 
-		const slides = document.querySelectorAll('.slide');
-		let currentSlide = 0;
-
-		function showSlide(index) {
-			slides.forEach((slide, i) => {
-				if (i === index) {
-					slide.style.display = 'block';
-				} else {
-					slide.style.display = 'none';
-				}
-			});
-		}
-
-		function nextSlide() {
-			currentSlide = (currentSlide + 1) % slides.length;
-			showSlide(currentSlide);
-		}
-
-		// Auto-play the slideshow every 4 seconds
-		setInterval(nextSlide, 4000);
-		
-		// Show the first slide initially
-		showSlide(currentSlide);
-	
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true
+            },
+            spaceBetween: 60,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    });
+</script>
