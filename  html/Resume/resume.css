@@ -1,0 +1,36 @@
+* {
+	
+	font-family: Verdana;
+	}
+	article image{
+		text-align: start;
+	}
+	article{
+	
+		text-align: center;
+	}
+	p :hover{
+		background-color: rgb(46, 69, 88);
+	}
+	main{
+		text-align: center;
+	} 
+	ul{
+	text-rendering: center;
+	}
+	.main-banner{
+	background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/thumbs/1661168512_20-kartinkin-net-p-stilnii-goluboi-fon-krasivo-21.jpg);
+	}
+	footer p{ 
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		
+		
+	figure{
+		border-image-width: 0.3px;border: cornflowerblue;
+	}
